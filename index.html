@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html>
+<!--  created by v4vijay  -->
+<head>
+	<title> VizApp AngularJS </title>
+	<script type="text/javascript" src="./js/angular.js"></script>
+	<script type="text/javascript" src="./js/vizApp.js"></script>
+</head>
+<body ng-app="vizApp" ng-controller="VizCtrl">
+	
+
+	<enter> </enter>
+
+
+	<input type="text" ng-model="username" />
+	<button ng-click="addPerson()"> Push </button>
+	<h1> Hello {{username}}!!! </h1> 
+
+
+	<ul>
+		<li ng-repeat="person in persons | filter:username">
+			{{person.username}} <sub> {{person.data}} </sub> 
+		</li>
+	</ul>
+
+
+	<button ng-click="isShow = !isShow"> Show </button>
+	<div ng-show="isShow">
+		<button ng-click="sayMessage()"> Yo!!! </button>
+		<h3> {{message}} </h3>
+	</div>
+
+
+	<span> {{"Hi, Your " | toVizCapital }} Total Bill: {{1000 | currency}} </span>
+
+	<ol>
+		<li ng-repeat="person in persons | orderBy:'username'">
+			{{person.username}} <sub> {{person.data}} </sub> 
+		</li>	
+	</ol>
+</body>
+</html>
