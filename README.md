@@ -1,4 +1,0 @@
-vizappjs
-========
-
-AngularJS App
