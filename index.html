@@ -20,7 +20,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"> CurrencyRate </a>
+            <a class="navbar-brand" href="#"> App </a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -54,51 +54,11 @@
 
         <div class="alert alert-info" role="alert">
           <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-          Hey, This is CurrencyApp by me, I have also created github repo for the same. you could find
-          <a href="https://github.com/vs4vijay/CuCoApp" class="alert-link"> here </a>
+          Hey, This is Demo App. you could find
+          <a href="https://github.com/vs4vijay/vizappjs" class="alert-link"> here </a>
         </div>
 
-        <h1> CurrencyRate <small> multiple currencies, cross comparison </small></h1>
-
-        <div class="row" style="margin-top: 10px;">
-          <div class="col-md-6">
-            <input class="form-control" list="currencyList" ng-model="currencyModel.baseCurrencySymbol" placeholder="Choose base currency" ng-change="resetConvertedCurrencyList()"/>
-            <datalist id="currencyList">
-              <option ng-repeat="currency in currencyList" value="{{currency.symbol}}"> {{currency.name}} ({{currency.symbol}}) </option>
-            </datalist>
-          </div>
-
-          <div class="col-md-6">
-            <div multi-select input-model="currencyList" button-label="icon symbol" on-item-click="selectOutputCurrency(data)" default-label="Add multiple currencies"
-            item-label="icon name symbol maker" tick-property="ticked"></div>
-          </div>
-        </div>
-
-        <div class="row" style="margin-top: 10px;">
-          <div class="col-md-6">
-            <div class="input-group">
-              <span class="input-group-addon"> {{currencyModel.baseCurrencySymbol}} </span>
-              <input type="text" class="form-control" ng-model="currencyModel.baseCurrencyValue" ng-change="resetConvertedCurrencyList()">
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <table class="table table-bordered table-striped table-hover">
-              <thead>
-                <tr>
-                  <th> Value </th>
-                  <th> Symbol </th>
-                  <th> Name </th>
-                </tr>
-              </thead>
-              <tr ng-repeat="convertedCurrency in convertedCurrencyList">
-                <td> {{convertedCurrency.value}} </td>
-                <td> <span class="label label-success">{{convertedCurrency.symbol}} </span> </td>
-                <td> {{convertedCurrency.name}} </td>
-              </tr>
-            </table>
-          </div>
-        </div>
+        <h1> App <small> demo app </small></h1>
 
       </div>
 
